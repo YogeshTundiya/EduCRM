@@ -1,4 +1,4 @@
-# EduCRM — Technoglobe PRO
+# EduCRM
 
 <div align="center">
 
@@ -23,7 +23,7 @@
 
 ## 📖 Overview
 
-**EduCRM** (Technoglobe PRO) is a production-grade Educational Resource Management and Student CRM platform designed with high-end editorial aesthetics, micro-interactions, and institutional automation.
+**EduCRM** is a production-grade Educational Resource Management and Student CRM platform designed with high-end editorial aesthetics, micro-interactions, and institutional automation.
 
 Built to replace archaic student tracking tools, EduCRM unifies **admissions, curriculum planning, daily attendance roll call, faculty mentorship, recycle-bin recovery, and executive analytics** within an intuitive, responsive interface styled with signature brand coral (`#FF5B26`) on high-contrast canvas backgrounds.
 
@@ -224,7 +224,7 @@ When launching the application for the first time, you can log in with:
 
 | Role | Email | Password | Quick Action |
 |---|---|---|---|
-| **System Administrator** | `admin@technoglobe.com` | `admin123` | Click **"1-Click Fill Admin"** on the login card |
+| **System Administrator** | `admin@educrm.com` | `admin123` | Click **"1-Click Fill Admin"** on the login card |
 
 ---
 

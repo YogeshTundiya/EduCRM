@@ -85,7 +85,7 @@ export const AddProfessorModal: React.FC<{ onClose: () => void }> = ({ onClose }
               <input
                 type="email"
                 required
-                placeholder="maya.lin@technoglobe.edu"
+                placeholder="maya.lin@educrm.edu"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full mt-1 px-4 py-2.5 rounded-2xl bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700 text-sm font-medium outline-none focus:border-[#FF5B26] text-[#141619] dark:text-white"

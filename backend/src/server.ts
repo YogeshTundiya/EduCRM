@@ -5,7 +5,7 @@ import { prisma } from './config/db';
 const server = app.listen(ENV.PORT, () => {
   console.log(`
   ======================================================
-  🚀 Technoglobe PRO Management Backend Server Started
+  🚀 EduCRM Management Backend Server Started
   📍 URL: http://localhost:${ENV.PORT}
   🛠️ API Base: http://localhost:${ENV.PORT}/api/v1
   📊 Environment: ${ENV.NODE_ENV}

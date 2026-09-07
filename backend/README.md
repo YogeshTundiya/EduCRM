@@ -1,4 +1,4 @@
-# Technoglobe PRO — Backend REST API
+# EduCRM — Backend REST API
 
 Production-ready backend API built with **Node.js, Express, TypeScript, and Prisma**, matching all architectural, data model, and security specifications in `doc/TRD.md`.
 
@@ -41,7 +41,7 @@ npm install
 # 2. Push database schema (creates dev.db and generates Prisma Client)
 npx prisma db push
 
-# 3. Seed initial Technoglobe data (Admin, Courses, Professors, Students)
+# 3. Seed initial EduCRM data (Admin, Courses, Professors, Students)
 npx ts-node src/prisma/seed.ts
 
 # 4. Start the development server
@@ -51,7 +51,7 @@ npm run dev
 The server will be running at: **`http://localhost:5000`**
 
 ### Seeded Credentials:
-- **Admin Email**: `admin@technoglobe.com`
+- **Admin Email**: `admin@educrm.com`
 - **Password**: `admin123`
 
 ---

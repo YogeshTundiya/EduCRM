@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { AuthUser } from '../types';
-import { TechnoglobeApi } from '../lib/api';
+import { EduCrmApi } from '../lib/api';
 
 export const SEEDED_ADMIN = {
   name: 'Sajibur Rahman',
-  email: 'admin@technoglobe.com',
+  email: 'admin@educrm.com',
   password: 'admin123',
   role: 'ADMIN',
   avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
@@ -23,9 +23,9 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const AUTH_USER_KEY = 'technoglobe_auth_user';
-const AUTH_TOKEN_KEY = 'technoglobe_token';
-const REGISTERED_USERS_KEY = 'technoglobe_registered_accounts';
+const AUTH_USER_KEY = 'educrm_auth_user';
+const AUTH_TOKEN_KEY = 'educrm_token';
+const REGISTERED_USERS_KEY = 'educrm_registered_accounts';
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<AuthUser | null>(() => {
@@ -61,7 +61,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     try {
       // 1. Try Live Backend API
-      const response = await TechnoglobeApi.login(normalizedEmail, password);
+      const response = await EduCrmApi.login(normalizedEmail, password);
       const authUser: AuthUser = {
         id: response.admin.id,
         name: response.admin.name,
@@ -131,7 +131,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     try {
       // 1. Try Live Backend API
-      const response = await TechnoglobeApi.register({
+      const response = await EduCrmApi.register({
         name: name.trim(),
         email: normalizedEmail,
         password,

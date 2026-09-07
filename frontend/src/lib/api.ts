@@ -1,12 +1,12 @@
 /**
- * API client to communicate with Technoglobe Backend REST API
+ * API client to communicate with EduCRM Backend REST API
  * Base URL: http://localhost:5000/api/v1
  */
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';
 
 export async function fetchApi<T>(endpoint: string, options?: RequestInit): Promise<T> {
-  const token = localStorage.getItem('technoglobe_token');
+  const token = localStorage.getItem('educrm_token') || localStorage.getItem('technoglobe_token');
 
   const headers: HeadersInit = {
     'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ export async function fetchApi<T>(endpoint: string, options?: RequestInit): Prom
   return response.json();
 }
 
-export const TechnoglobeApi = {
+export const EduCrmApi = {
   // Auth
   login: (email: string, password: string) =>
     fetchApi<{ admin: any; accessToken: string }>('/auth/login', {
@@ -93,3 +93,5 @@ export const TechnoglobeApi = {
   getDashboardStats: () =>
     fetchApi<{ data: any }>('/dashboard/stats')
 };
+
+export const TechnoglobeApi = EduCrmApi;

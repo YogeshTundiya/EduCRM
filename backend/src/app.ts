@@ -31,7 +31,7 @@ if (ENV.NODE_ENV === 'development') {
 // Health Check
 app.get('/', (req: Request, res: Response) => {
   res.json({
-    name: 'Technoglobe PRO Management API',
+    name: 'EduCRM Management API',
     version: '1.0.0',
     status: 'online',
     timestamp: new Date().toISOString()

@@ -10,7 +10,7 @@ function addMonths(startDate: Date, months: number): Date {
 }
 
 async function main() {
-  console.log('🌱 Seeding Technoglobe PRO database...');
+  console.log('🌱 Seeding EduCRM database...');
 
   // 1. Clean existing records
   await prisma.attendance.deleteMany();
@@ -26,7 +26,7 @@ async function main() {
   const admin = await prisma.admin.create({
     data: {
       name: 'Sajibur Rahman',
-      email: 'admin@technoglobe.com',
+      email: 'admin@educrm.com',
       passwordHash,
       role: 'ADMIN'
     }
@@ -116,7 +116,7 @@ async function main() {
   const profAris = await prisma.professor.create({
     data: {
       name: 'Dr. Aris Thorne',
-      email: 'aris.thorne@technoglobe.edu',
+      email: 'aris.thorne@educrm.edu',
       phone: '+91 98290 12345',
       specialization: 'Distributed Systems & Web Tech',
       photoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
@@ -133,7 +133,7 @@ async function main() {
   const profElena = await prisma.professor.create({
     data: {
       name: 'Prof. Elena Rostova',
-      email: 'elena.rostova@technoglobe.edu',
+      email: 'elena.rostova@educrm.edu',
       phone: '+91 98290 23456',
       specialization: 'Cyber Security & Cryptography',
       photoUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80',
@@ -149,7 +149,7 @@ async function main() {
   const profPriya = await prisma.professor.create({
     data: {
       name: 'Priya Sharma',
-      email: 'priya.sharma@technoglobe.edu',
+      email: 'priya.sharma@educrm.edu',
       phone: '+91 98290 45678',
       specialization: 'Human-Computer Interaction & UI',
       photoUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
@@ -247,7 +247,7 @@ async function main() {
   });
 
   console.log('✅ Initial attendance sessions seeded');
-  console.log('🎉 Technoglobe database seeding complete!');
+  console.log('🎉 EduCRM database seeding complete!');
 }
 
 main()

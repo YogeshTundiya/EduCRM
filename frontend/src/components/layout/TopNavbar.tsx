@@ -31,7 +31,7 @@ export const TopNavbar: React.FC = () => {
           </motion.div>
           <div className="flex flex-col">
             <span className="font-extrabold text-xl tracking-tight text-[#141619] dark:text-white flex items-center gap-1.5">
-              Technoglobe
+              EduCRM
               <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-[#FF5B26]/10 text-[#FF5B26]">PRO</span>
             </span>
           </div>
@@ -126,7 +126,7 @@ export const TopNavbar: React.FC = () => {
                   {user?.name || "Sajibur Rahman"}
                 </span>
                 <span className="text-[11px] text-neutral-400 font-normal truncate max-w-[120px]">
-                  {user?.email || "admin@technoglobe.com"}
+                  {user?.email || "admin@educrm.com"}
                 </span>
               </div>
               <ChevronDown className="w-3.5 h-3.5 text-neutral-400 ml-1" />

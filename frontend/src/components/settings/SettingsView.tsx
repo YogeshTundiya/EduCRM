@@ -467,7 +467,7 @@ export const SettingsView: React.FC = () => {
 
                 <div className="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/40 text-amber-800 dark:text-amber-300 text-xs flex items-center gap-3">
                   <Info className="w-4 h-4 shrink-0" />
-                  <span>Default demo credentials: <strong>admin@technoglobe.com</strong> / <strong>admin123</strong></span>
+                  <span>Default demo credentials: <strong>admin@educrm.com</strong> / <strong>admin123</strong></span>
                 </div>
 
                 <form onSubmit={handlePasswordChange} className="space-y-4 max-w-md">

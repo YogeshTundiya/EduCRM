@@ -58,7 +58,7 @@ export const INITIAL_PROFESSORS: Professor[] = [
   {
     id: 'prof-1',
     name: 'Dr. Aris Thorne',
-    email: 'aris.thorne@technoglobe.edu',
+    email: 'aris.thorne@educrm.edu',
     phone: '+91 98290 12345',
     specialization: 'Distributed Systems & Web Tech',
     photoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
@@ -69,7 +69,7 @@ export const INITIAL_PROFESSORS: Professor[] = [
   {
     id: 'prof-2',
     name: 'Prof. Elena Rostova',
-    email: 'elena.rostova@technoglobe.edu',
+    email: 'elena.rostova@educrm.edu',
     phone: '+91 98290 23456',
     specialization: 'Cyber Security & Cryptography',
     photoUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80',
@@ -80,7 +80,7 @@ export const INITIAL_PROFESSORS: Professor[] = [
   {
     id: 'prof-3',
     name: 'Marcus Vance',
-    email: 'marcus.vance@technoglobe.edu',
+    email: 'marcus.vance@educrm.edu',
     phone: '+91 98290 34567',
     specialization: 'Cloud Infrastructure & SRE',
     photoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
@@ -91,7 +91,7 @@ export const INITIAL_PROFESSORS: Professor[] = [
   {
     id: 'prof-4',
     name: 'Priya Sharma',
-    email: 'priya.sharma@technoglobe.edu',
+    email: 'priya.sharma@educrm.edu',
     phone: '+91 98290 45678',
     specialization: 'Human-Computer Interaction & UI',
     photoUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',

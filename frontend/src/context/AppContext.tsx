@@ -33,9 +33,9 @@ export type NavTab =
   | 'Settings';
 
 const DEFAULT_SETTINGS: InstituteSettings = {
-  instituteName: 'Technoglobe PRO Institute',
+  instituteName: 'EduCRM Institute',
   tagline: 'Enterprise Student & Course Management System',
-  contactEmail: 'admin@technoglobe.com',
+  contactEmail: 'admin@educrm.com',
   phone: '+91 98290 12345',
   currencySymbol: '₹',
   defaultDurationMonths: 6,

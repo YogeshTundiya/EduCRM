@@ -200,7 +200,7 @@ export const AuthPage: React.FC = () => {
                   <ellipse cx="7.05" cy="16.95" rx="2" ry="3.5" transform="rotate(45 7.05 16.95)" />
                 </svg>
                 <span className="font-semibold text-sm tracking-wide text-[#141619] dark:text-white">
-                  Technoglobe
+                  EduCRM
                 </span>
               </div>
 
@@ -377,7 +377,7 @@ export const AuthPage: React.FC = () => {
                       className="w-full py-2.5 px-4 rounded-full border border-dashed border-[#FF5B26]/40 hover:border-[#FF5B26] bg-[#FF5B26]/[0.04] hover:bg-[#FF5B26]/[0.08] text-[#FF5B26] dark:text-[#FF8B5A] text-xs font-semibold transition-all flex items-center justify-center gap-1.5"
                     >
                       <Sparkles className="w-3.5 h-3.5" />
-                      <span>Auto-fill Admin Pass (admin@technoglobe.com)</span>
+                      <span>Auto-fill Admin Pass (admin@educrm.com)</span>
                     </button>
                   </div>
 
